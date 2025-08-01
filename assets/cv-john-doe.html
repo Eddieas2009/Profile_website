@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3B82F6;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            color: #3B82F6;
+            margin-bottom: 10px;
+        }
+        
+        .header h2 {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h3 {
+            font-size: 1.3rem;
+            color: #3B82F6;
+            border-bottom: 2px solid #3B82F6;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .experience-item, .education-item, .skill-item {
+            margin-bottom: 20px;
+        }
+        
+        .experience-item h4, .education-item h4 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .company, .degree {
+            font-weight: bold;
+            color: #3B82F6;
+        }
+        
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            margin-bottom: 10px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3B82F6;
+        }
+        
+        .skill-category h4 {
+            color: #3B82F6;
+            margin-bottom: 10px;
+        }
+        
+        .skill-list {
+            list-style: none;
+        }
+        
+        .skill-list li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .skill-list li:before {
+            content: "•";
+            color: #3B82F6;
+            position: absolute;
+            left: 0;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #10B981;
+        }
+        
+        .project-item h4 {
+            color: #10B981;
+            margin-bottom: 10px;
+        }
+        
+        .project-tech {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                margin: 20px;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>John Doe</h1>
+        <h2>Full Stack Software Engineer</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <span>john.doe@example.com</span>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <span>+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+                <span>📍</span>
+                <span>San Francisco, CA</span>
+            </div>
+            <div class="contact-item">
+                <span>🔗</span>
+                <span>linkedin.com/in/johndoe</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Professional Summary</h3>
+        <p>Experienced Full Stack Software Engineer with over 5 years of expertise in developing scalable web applications and software solutions. Passionate about creating innovative solutions and building maintainable code. Specialized in modern web technologies, cloud architecture, and cross-platform development.</p>
+    </div>
+
+    <div class="section">
+        <h3>Work Experience</h3>
+        
+        <div class="experience-item">
+            <h4>Senior Software Engineer</h4>
+            <div class="company">TechCorp Inc.</div>
+            <div class="date">2022 - Present</div>
+            <div class="description">
+                <ul>
+                    <li>Lead development of scalable web applications using React, Node.js, and AWS</li>
+                    <li>Mentored junior developers and implemented best practices</li>
+                    <li>Designed and implemented microservices architecture</li>
+                    <li>Established CI/CD pipelines reducing deployment time by 60%</li>
+                    <li>Collaborated with cross-functional teams to deliver high-quality products</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <h4>Full Stack Developer</h4>
+            <div class="company">StartupXYZ</div>
+            <div class="date">2020 - 2022</div>
+            <div class="description">
+                <ul>
+                    <li>Built and maintained multiple web applications from concept to deployment</li>
+                    <li>Implemented responsive designs and optimized performance</li>
+                    <li>Collaborated with designers and product managers</li>
+                    <li>Integrated third-party APIs and payment systems</li>
+                    <li>Participated in agile development processes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <h4>Junior Developer</h4>
+            <div class="company">WebSolutions Ltd.</div>
+            <div class="date">2018 - 2020</div>
+            <div class="description">
+                <ul>
+                    <li>Developed responsive websites and e-commerce solutions</li>
+                    <li>Worked with PHP, JavaScript, and MySQL</li>
+                    <li>Implemented WordPress themes and plugins</li>
+                    <li>Optimized website performance and SEO</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Frontend</h4>
+                <ul class="skill-list">
+                    <li>React.js & React Native</li>
+                    <li>Vue.js</li>
+                    <li>TypeScript</li>
+                    <li>Tailwind CSS</li>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Backend</h4>
+                <ul class="skill-list">
+                    <li>Node.js & Express.js</li>
+                    <li>Python & Django</li>
+                    <li>PHP & Laravel</li>
+                    <li>Java</li>
+                    <li>RESTful APIs</li>
+                    <li>GraphQL</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Databases</h4>
+                <ul class="skill-list">
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>Redis</li>
+                    <li>Database Design</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Tools & Cloud</h4>
+                <ul class="skill-list">
+                    <li>AWS (EC2, S3, Lambda)</li>
+                    <li>Docker & Kubernetes</li>
+                    <li>Git & GitHub</li>
+                    <li>CI/CD Pipelines</li>
+                    <li>Linux/Unix</li>
+                    <li>Agile/Scrum</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Featured Projects</h3>
+        <div class="projects">
+            <div class="project-item">
+                <h4>E-Commerce Platform</h4>
+                <p>Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.</p>
+                <div class="project-tech">React, Node.js, MongoDB, Stripe API</div>
+            </div>
+            
+            <div class="project-item">
+                <h4>Analytics Dashboard</h4>
+                <p>Real-time data visualization dashboard with interactive charts and customizable widgets.</p>
+                <div class="project-tech">Vue.js, D3.js, Firebase, Chart.js</div>
+            </div>
+            
+            <div class="project-item">
+                <h4>Task Management App</h4>
+                <p>Cross-platform mobile app for team collaboration with real-time synchronization.</p>
+                <div class="project-tech">React Native, Express.js, PostgreSQL</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Education</h3>
+        <div class="education-item">
+            <h4>Bachelor of Science in Computer Science</h4>
+            <div class="degree">University of Technology</div>
+            <div class="date">2014 - 2018</div>
+            <p>Graduated with honors. Relevant coursework: Data Structures, Algorithms, Software Engineering, Database Systems, Web Development.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Certifications</h3>
+        <ul>
+            <li>AWS Certified Developer Associate</li>
+            <li>MongoDB Certified Developer</li>
+            <li>Google Cloud Professional Developer</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Languages</h3>
+        <ul>
+            <li>English (Native)</li>
+            <li>Spanish (Conversational)</li>
+        </ul>
+    </div>
+</body>
+</html> 
